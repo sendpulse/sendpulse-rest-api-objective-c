@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C32E9B7D1B4EB15F00FCD7B7 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B641B4EB15F00FCD7B7 /* SBJsonParser.m */; };
+		C32E9B7E1B4EB15F00FCD7B7 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B661B4EB15F00FCD7B7 /* SBJsonStreamParser.m */; };
+		C32E9B7F1B4EB15F00FCD7B7 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B681B4EB15F00FCD7B7 /* SBJsonStreamParserAccumulator.m */; };
+		C32E9B801B4EB15F00FCD7B7 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B6A1B4EB15F00FCD7B7 /* SBJsonStreamParserAdapter.m */; };
+		C32E9B811B4EB15F00FCD7B7 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B6C1B4EB15F00FCD7B7 /* SBJsonStreamParserState.m */; };
+		C32E9B821B4EB15F00FCD7B7 /* SBJsonStreamTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B6E1B4EB15F00FCD7B7 /* SBJsonStreamTokeniser.m */; };
+		C32E9B831B4EB15F00FCD7B7 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B701B4EB15F00FCD7B7 /* SBJsonStreamWriter.m */; };
+		C32E9B841B4EB15F00FCD7B7 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B721B4EB15F00FCD7B7 /* SBJsonStreamWriterAccumulator.m */; };
+		C32E9B851B4EB15F00FCD7B7 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B741B4EB15F00FCD7B7 /* SBJsonStreamWriterState.m */; };
+		C32E9B861B4EB15F00FCD7B7 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B761B4EB15F00FCD7B7 /* SBJsonWriter.m */; };
+		C32E9B871B4EB15F00FCD7B7 /* RTSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B791B4EB15F00FCD7B7 /* RTSerializer.m */; };
+		C32E9B881B4EB15F00FCD7B7 /* Sendpulse.m in Sources */ = {isa = PBXBuildFile; fileRef = C32E9B7C1B4EB15F00FCD7B7 /* Sendpulse.m */; };
+		C3D1099A1B4EA7AA0043760D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D109991B4EA7AA0043760D /* AppDelegate.m */; };
+		C3D1099C1B4EA7AA0043760D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D1099B1B4EA7AA0043760D /* main.m */; };
+		C3D1099E1B4EA7AA0043760D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D1099D1B4EA7AA0043760D /* Images.xcassets */; };
+		C3D109A11B4EA7AA0043760D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D1099F1B4EA7AA0043760D /* MainMenu.xib */; };
+		C3D109AD1B4EA7AB0043760D /* sendpulse_rest_apiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D109AC1B4EA7AB0043760D /* sendpulse_rest_apiTests.m */; };
+		C3D109C31B4EABC80043760D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D109C11B4EABC80043760D /* MainViewController.m */; };
+		C3D109C41B4EABC80043760D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3D109C21B4EABC80043760D /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3D109A71B4EA7AB0043760D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3D1098B1B4EA7AA0043760D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3D109921B4EA7AA0043760D;
+			remoteInfo = "sendpulse-rest-api";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C32E9B621B4EB15F00FCD7B7 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		C32E9B631B4EB15F00FCD7B7 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		C32E9B641B4EB15F00FCD7B7 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		C32E9B651B4EB15F00FCD7B7 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		C32E9B661B4EB15F00FCD7B7 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		C32E9B671B4EB15F00FCD7B7 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		C32E9B681B4EB15F00FCD7B7 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		C32E9B691B4EB15F00FCD7B7 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		C32E9B6A1B4EB15F00FCD7B7 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		C32E9B6B1B4EB15F00FCD7B7 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		C32E9B6C1B4EB15F00FCD7B7 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		C32E9B6D1B4EB15F00FCD7B7 /* SBJsonStreamTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamTokeniser.h; sourceTree = "<group>"; };
+		C32E9B6E1B4EB15F00FCD7B7 /* SBJsonStreamTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamTokeniser.m; sourceTree = "<group>"; };
+		C32E9B6F1B4EB15F00FCD7B7 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		C32E9B701B4EB15F00FCD7B7 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		C32E9B711B4EB15F00FCD7B7 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		C32E9B721B4EB15F00FCD7B7 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		C32E9B731B4EB15F00FCD7B7 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		C32E9B741B4EB15F00FCD7B7 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		C32E9B751B4EB15F00FCD7B7 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		C32E9B761B4EB15F00FCD7B7 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		C32E9B781B4EB15F00FCD7B7 /* RTSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSerializer.h; sourceTree = "<group>"; };
+		C32E9B791B4EB15F00FCD7B7 /* RTSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSerializer.m; sourceTree = "<group>"; };
+		C32E9B7B1B4EB15F00FCD7B7 /* Sendpulse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sendpulse.h; sourceTree = "<group>"; };
+		C32E9B7C1B4EB15F00FCD7B7 /* Sendpulse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sendpulse.m; sourceTree = "<group>"; };
+		C3D109931B4EA7AA0043760D /* sendpulse-rest-api.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sendpulse-rest-api.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D109971B4EA7AA0043760D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D109981B4EA7AA0043760D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3D109991B4EA7AA0043760D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3D1099B1B4EA7AA0043760D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3D1099D1B4EA7AA0043760D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3D109A01B4EA7AA0043760D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C3D109A61B4EA7AB0043760D /* sendpulse-rest-apiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sendpulse-rest-apiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3D109AB1B4EA7AB0043760D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D109AC1B4EA7AB0043760D /* sendpulse_rest_apiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sendpulse_rest_apiTests.m; sourceTree = "<group>"; };
+		C3D109C01B4EABC80043760D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C3D109C11B4EABC80043760D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C3D109C21B4EABC80043760D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3D109901B4EA7AA0043760D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D109A31B4EA7AB0043760D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C32E9B611B4EB15F00FCD7B7 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				C32E9B621B4EB15F00FCD7B7 /* SBJson.h */,
+				C32E9B631B4EB15F00FCD7B7 /* SBJsonParser.h */,
+				C32E9B641B4EB15F00FCD7B7 /* SBJsonParser.m */,
+				C32E9B651B4EB15F00FCD7B7 /* SBJsonStreamParser.h */,
+				C32E9B661B4EB15F00FCD7B7 /* SBJsonStreamParser.m */,
+				C32E9B671B4EB15F00FCD7B7 /* SBJsonStreamParserAccumulator.h */,
+				C32E9B681B4EB15F00FCD7B7 /* SBJsonStreamParserAccumulator.m */,
+				C32E9B691B4EB15F00FCD7B7 /* SBJsonStreamParserAdapter.h */,
+				C32E9B6A1B4EB15F00FCD7B7 /* SBJsonStreamParserAdapter.m */,
+				C32E9B6B1B4EB15F00FCD7B7 /* SBJsonStreamParserState.h */,
+				C32E9B6C1B4EB15F00FCD7B7 /* SBJsonStreamParserState.m */,
+				C32E9B6D1B4EB15F00FCD7B7 /* SBJsonStreamTokeniser.h */,
+				C32E9B6E1B4EB15F00FCD7B7 /* SBJsonStreamTokeniser.m */,
+				C32E9B6F1B4EB15F00FCD7B7 /* SBJsonStreamWriter.h */,
+				C32E9B701B4EB15F00FCD7B7 /* SBJsonStreamWriter.m */,
+				C32E9B711B4EB15F00FCD7B7 /* SBJsonStreamWriterAccumulator.h */,
+				C32E9B721B4EB15F00FCD7B7 /* SBJsonStreamWriterAccumulator.m */,
+				C32E9B731B4EB15F00FCD7B7 /* SBJsonStreamWriterState.h */,
+				C32E9B741B4EB15F00FCD7B7 /* SBJsonStreamWriterState.m */,
+				C32E9B751B4EB15F00FCD7B7 /* SBJsonWriter.h */,
+				C32E9B761B4EB15F00FCD7B7 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			path = ../../../JSON;
+			sourceTree = "<group>";
+		};
+		C32E9B771B4EB15F00FCD7B7 /* RTSerializer */ = {
+			isa = PBXGroup;
+			children = (
+				C32E9B781B4EB15F00FCD7B7 /* RTSerializer.h */,
+				C32E9B791B4EB15F00FCD7B7 /* RTSerializer.m */,
+			);
+			name = RTSerializer;
+			path = ../../../RTSerializer;
+			sourceTree = "<group>";
+		};
+		C32E9B7A1B4EB15F00FCD7B7 /* SendpulseRestApi */ = {
+			isa = PBXGroup;
+			children = (
+				C32E9B7B1B4EB15F00FCD7B7 /* Sendpulse.h */,
+				C32E9B7C1B4EB15F00FCD7B7 /* Sendpulse.m */,
+			);
+			name = SendpulseRestApi;
+			path = ../../../SendpulseRestApi;
+			sourceTree = "<group>";
+		};
+		C3D1098A1B4EA7AA0043760D = {
+			isa = PBXGroup;
+			children = (
+				C3D109951B4EA7AA0043760D /* sendpulse-rest-api */,
+				C3D109A91B4EA7AB0043760D /* sendpulse-rest-apiTests */,
+				C3D109941B4EA7AA0043760D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3D109941B4EA7AA0043760D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3D109931B4EA7AA0043760D /* sendpulse-rest-api.app */,
+				C3D109A61B4EA7AB0043760D /* sendpulse-rest-apiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3D109951B4EA7AA0043760D /* sendpulse-rest-api */ = {
+			isa = PBXGroup;
+			children = (
+				C32E9B611B4EB15F00FCD7B7 /* JSON */,
+				C32E9B771B4EB15F00FCD7B7 /* RTSerializer */,
+				C32E9B7A1B4EB15F00FCD7B7 /* SendpulseRestApi */,
+				C3D109981B4EA7AA0043760D /* AppDelegate.h */,
+				C3D109991B4EA7AA0043760D /* AppDelegate.m */,
+				C3D109C01B4EABC80043760D /* MainViewController.h */,
+				C3D109C11B4EABC80043760D /* MainViewController.m */,
+				C3D109C21B4EABC80043760D /* MainViewController.xib */,
+				C3D1099D1B4EA7AA0043760D /* Images.xcassets */,
+				C3D1099F1B4EA7AA0043760D /* MainMenu.xib */,
+				C3D109961B4EA7AA0043760D /* Supporting Files */,
+			);
+			path = "sendpulse-rest-api";
+			sourceTree = "<group>";
+		};
+		C3D109961B4EA7AA0043760D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3D109971B4EA7AA0043760D /* Info.plist */,
+				C3D1099B1B4EA7AA0043760D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3D109A91B4EA7AB0043760D /* sendpulse-rest-apiTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3D109AC1B4EA7AB0043760D /* sendpulse_rest_apiTests.m */,
+				C3D109AA1B4EA7AB0043760D /* Supporting Files */,
+			);
+			path = "sendpulse-rest-apiTests";
+			sourceTree = "<group>";
+		};
+		C3D109AA1B4EA7AB0043760D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3D109AB1B4EA7AB0043760D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3D109921B4EA7AA0043760D /* sendpulse-rest-api */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D109B01B4EA7AB0043760D /* Build configuration list for PBXNativeTarget "sendpulse-rest-api" */;
+			buildPhases = (
+				C3D1098F1B4EA7AA0043760D /* Sources */,
+				C3D109901B4EA7AA0043760D /* Frameworks */,
+				C3D109911B4EA7AA0043760D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sendpulse-rest-api";
+			productName = "sendpulse-rest-api";
+			productReference = C3D109931B4EA7AA0043760D /* sendpulse-rest-api.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3D109A51B4EA7AB0043760D /* sendpulse-rest-apiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D109B31B4EA7AB0043760D /* Build configuration list for PBXNativeTarget "sendpulse-rest-apiTests" */;
+			buildPhases = (
+				C3D109A21B4EA7AB0043760D /* Sources */,
+				C3D109A31B4EA7AB0043760D /* Frameworks */,
+				C3D109A41B4EA7AB0043760D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3D109A81B4EA7AB0043760D /* PBXTargetDependency */,
+			);
+			name = "sendpulse-rest-apiTests";
+			productName = "sendpulse-rest-apiTests";
+			productReference = C3D109A61B4EA7AB0043760D /* sendpulse-rest-apiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3D1098B1B4EA7AA0043760D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = sendpulse.com;
+				TargetAttributes = {
+					C3D109921B4EA7AA0043760D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					C3D109A51B4EA7AB0043760D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = C3D109921B4EA7AA0043760D;
+					};
+				};
+			};
+			buildConfigurationList = C3D1098E1B4EA7AA0043760D /* Build configuration list for PBXProject "sendpulse-rest-api" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3D1098A1B4EA7AA0043760D;
+			productRefGroup = C3D109941B4EA7AA0043760D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3D109921B4EA7AA0043760D /* sendpulse-rest-api */,
+				C3D109A51B4EA7AB0043760D /* sendpulse-rest-apiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3D109911B4EA7AA0043760D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D1099E1B4EA7AA0043760D /* Images.xcassets in Resources */,
+				C3D109C41B4EABC80043760D /* MainViewController.xib in Resources */,
+				C3D109A11B4EA7AA0043760D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D109A41B4EA7AB0043760D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3D1098F1B4EA7AA0043760D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D1099C1B4EA7AA0043760D /* main.m in Sources */,
+				C32E9B861B4EB15F00FCD7B7 /* SBJsonWriter.m in Sources */,
+				C32E9B801B4EB15F00FCD7B7 /* SBJsonStreamParserAdapter.m in Sources */,
+				C32E9B7D1B4EB15F00FCD7B7 /* SBJsonParser.m in Sources */,
+				C32E9B831B4EB15F00FCD7B7 /* SBJsonStreamWriter.m in Sources */,
+				C32E9B871B4EB15F00FCD7B7 /* RTSerializer.m in Sources */,
+				C32E9B821B4EB15F00FCD7B7 /* SBJsonStreamTokeniser.m in Sources */,
+				C32E9B7F1B4EB15F00FCD7B7 /* SBJsonStreamParserAccumulator.m in Sources */,
+				C3D109C31B4EABC80043760D /* MainViewController.m in Sources */,
+				C32E9B811B4EB15F00FCD7B7 /* SBJsonStreamParserState.m in Sources */,
+				C32E9B841B4EB15F00FCD7B7 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				C32E9B851B4EB15F00FCD7B7 /* SBJsonStreamWriterState.m in Sources */,
+				C3D1099A1B4EA7AA0043760D /* AppDelegate.m in Sources */,
+				C32E9B881B4EB15F00FCD7B7 /* Sendpulse.m in Sources */,
+				C32E9B7E1B4EB15F00FCD7B7 /* SBJsonStreamParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3D109A21B4EA7AB0043760D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3D109AD1B4EA7AB0043760D /* sendpulse_rest_apiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3D109A81B4EA7AB0043760D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3D109921B4EA7AA0043760D /* sendpulse-rest-api */;
+			targetProxy = C3D109A71B4EA7AB0043760D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3D1099F1B4EA7AA0043760D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D109A01B4EA7AA0043760D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3D109AE1B4EA7AB0043760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C3D109AF1B4EA7AB0043760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C3D109B11B4EA7AB0043760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "sendpulse-rest-api/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3D109B21B4EA7AB0043760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "sendpulse-rest-api/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C3D109B41B4EA7AB0043760D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "sendpulse-rest-apiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sendpulse-rest-api.app/Contents/MacOS/sendpulse-rest-api";
+			};
+			name = Debug;
+		};
+		C3D109B51B4EA7AB0043760D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "sendpulse-rest-apiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sendpulse-rest-api.app/Contents/MacOS/sendpulse-rest-api";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3D1098E1B4EA7AA0043760D /* Build configuration list for PBXProject "sendpulse-rest-api" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D109AE1B4EA7AB0043760D /* Debug */,
+				C3D109AF1B4EA7AB0043760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D109B01B4EA7AB0043760D /* Build configuration list for PBXNativeTarget "sendpulse-rest-api" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D109B11B4EA7AB0043760D /* Debug */,
+				C3D109B21B4EA7AB0043760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D109B31B4EA7AB0043760D /* Build configuration list for PBXNativeTarget "sendpulse-rest-apiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3D109B41B4EA7AB0043760D /* Debug */,
+				C3D109B51B4EA7AB0043760D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3D1098B1B4EA7AA0043760D /* Project object */;
+}
