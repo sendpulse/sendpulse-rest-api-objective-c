@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C6B68637-1F92-4B02-96AD-A7C8FC899F3A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>sendpulse-rest-api</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9D59D1C4D0E4A79E60FF8EDB957116E380FD47EC</key>
 		<string>https://github.com/sendpulse/sendpulse-rest-api-objective-c.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Examples/sendpulse-rest-api/sendpulse-rest-api.xcodeproj/project.xcworkspace</string>
+	<string>Examples/IOS/sendpulse-rest-api.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9D59D1C4D0E4A79E60FF8EDB957116E380FD47EC</key>
