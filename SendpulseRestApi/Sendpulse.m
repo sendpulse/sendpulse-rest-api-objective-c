@@ -792,7 +792,6 @@ static int responsecode = 0;
     if(additionalParams !=nil && [additionalParams count]>0){
         [taskInfo addEntriesFromDictionary:additionalParams];
     }
-    NSLog(@"taskinfo: %@",taskInfo);
     [self sendrequest:@"/push/tasks" :@"POST" :taskInfo :YES];
 }
 
