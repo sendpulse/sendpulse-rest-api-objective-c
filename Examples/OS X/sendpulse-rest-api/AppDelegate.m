@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  sendpulse-rest-api
 //
-//  Copyright (c) 2015 sendpulse.com. All rights reserved.
+//  Copyright (c) 2016 sendpulse.com. All rights reserved.
 //
 
 #import "AppDelegate.h"

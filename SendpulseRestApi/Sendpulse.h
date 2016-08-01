@@ -2,7 +2,7 @@
 //  Sendpulse.h
 //  ;
 //
-//  Copyright (c) 2015 sendpulse.com. All rights reserved.
+//  Copyright (c) 2016 sendpulse.com. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -55,4 +55,12 @@
 -(void) smtpAddDomain:(NSString*) email;
 -(void) smtpVerifyDomain:(NSString*) email;
 -(void) smtpSendMail:(NSMutableDictionary*) emaildata;
+-(void) pushListCampaigns:(int) limit :(int) offset;
+-(void) pushCountWebsites;
+-(void) pushListWebsites:(int) limit :(int) offset;
+-(void) pushListWebsiteVariables:(NSString*) siteId;
+-(void) pushListWebsiteSubscriptions:(NSString*) siteId :(int) limit :(int) offset;
+-(void) pushCountWebsiteSubscriptions:(NSString*) siteId;
+-(void) pushSetSubscriptionState:(NSString*) subscriptionId :(int) state;
+-(void) createPushTask:(NSMutableDictionary*) taskInfo :(NSMutableDictionary*) additionalParams;
 @end

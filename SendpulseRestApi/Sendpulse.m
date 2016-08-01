@@ -2,7 +2,7 @@
 //  Sendpulse.m
 //  sendpulse-rest-api
 //
-//  Copyright (c) 2015 sendpulse.com. All rights reserved.
+//  Copyright (c) 2016 sendpulse.com. All rights reserved.
 //
 
 #import "Sendpulse.h"
@@ -13,7 +13,7 @@
 @synthesize tokenName;
 @synthesize jsonData;
 @synthesize acceptedtokenName;
-static NSString* apiUrl = @"http://api.sendpulse.com";
+static NSString* apiUrl = @"https://api.sendpulse.com";
 static int refreshToken = 0;
 static int responsecode = 0;
 
@@ -93,7 +93,6 @@ static int responsecode = 0;
     }
     if(![[method uppercaseString] isEqualToString:@"GET"])
         request.HTTPBody = [postpatams dataUsingEncoding:NSUTF8StringEncoding];
-    NSLog(@"%@?%@",requestUrl,postpatams);
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     if (connection) {
         jsonData = [NSMutableData data];
@@ -688,4 +687,113 @@ static int responsecode = 0;
     [data setObject:sdata forKey:@"email"];
     [self sendrequest:@"smtp/emails" :@"POST" :data :YES];
 }
+/**
+ * Get list of push campaigns
+ * @param int limit
+ * @param int offset
+ */
+-(void) pushListCampaigns:(int) limit :(int) offset {
+    NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
+    [data setObject:[NSString stringWithFormat:@"%d",limit] forKey:@"limit"];
+    [data setObject:[NSString stringWithFormat:@"%d",offset] forKey:@"offset"];
+    [self sendrequest:@"push/tasks" :@"GET" :data :YES];
+}
+
+/**
+ * Get amount of websites
+ */
+-(void) pushCountWebsites{
+    [self sendrequest:@"push/websites/total" :@"GET" :nil :YES];
+}
+/**
+ Get list of websites
+ * @param int limit
+ * @param int offset
+ */
+-(void) pushListWebsites:(int) limit :(int) offset {
+    NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
+    [data setObject:[NSString stringWithFormat:@"%d",limit] forKey:@"limit"];
+    [data setObject:[NSString stringWithFormat:@"%d",offset] forKey:@"offset"];
+    [self sendrequest:@"push/websites" :@"GET" :data :YES];
+}
+/**
+ * Get list of all variables for website
+ *
+ * @param NSString siteId
+ */
+-(void) pushListWebsiteVariables:(NSString*) siteId{
+    if([siteId length]==0){
+        [self handleError:@"Empty id"];
+        return;
+    }
+    [self sendrequest:[NSString stringWithFormat:@"push/websites/%@/variables",siteId] :@"GET" :nil :YES];
+}
+
+/**
+ * Get list of subscriptions for the website
+ *
+ * @param NSString siteId
+ * @param int limit
+ * @param int offset
+ */
+-(void) pushListWebsiteSubscriptions:(NSString*) siteId :(int) limit :(int) offset{
+    NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
+    [data setObject:[NSString stringWithFormat:@"%d",limit] forKey:@"limit"];
+    [data setObject:[NSString stringWithFormat:@"%d",offset] forKey:@"offset"];
+    if([siteId length]==0){
+        [self handleError:@"Empty id"];
+        return;
+    }
+    [self sendrequest:[NSString stringWithFormat:@"push/websites/%@/subscriptions",siteId] :@"GET" :data :YES];
+}
+
+/**
+ * Get amount of subscriptions for the site
+ *
+ * @param NSString siteId
+ */
+-(void) pushCountWebsiteSubscriptions:(NSString*) siteId{
+    if([siteId length]==0){
+        [self handleError:@"Empty id"];
+        return;
+    }
+    [self sendrequest:[NSString stringWithFormat:@"push/websites/%@/subscriptions/total",siteId] :@"GET" :nil :YES];
+}
+
+/**
+ * Set state for subscription
+ *
+ * @param NSString subscriptionId
+ * @param int state
+ */
+-(void) pushSetSubscriptionState:(NSString*) subscriptionId :(int) state {
+    NSMutableDictionary *data = [[NSMutableDictionary alloc] init];
+    if([subscriptionId length]==0){
+        [self handleError:@"Empty id"];
+        return;
+    }
+    [data setObject:[NSString stringWithFormat:@"%@",subscriptionId] forKey:@"id"];
+    [data setObject:[NSString stringWithFormat:@"%d",state] forKey:@"state"];
+    [self sendrequest:@"push/subscriptions/state" :@"POST" :data :YES];
+}
+/**
+ * Create new push campaign
+ * @param NSMutableDictionary taskInfo
+ * @param NSMutableDictionary additionalParams
+ */
+-(void) createPushTask:(NSMutableDictionary*) taskInfo :(NSMutableDictionary*) additionalParams{
+    if([taskInfo valueForKey:@"ttl"]==nil){
+        [taskInfo setValue:@"0" forKey:@"ttl"];
+    }
+    if([taskInfo valueForKey:@"title"]==nil || [taskInfo valueForKey:@"website_id"]==nil || [taskInfo valueForKey:@"body"]==nil){
+        [self handleError:@"Not all data"];
+        return;
+    }
+    if(additionalParams !=nil && [additionalParams count]>0){
+        [taskInfo addEntriesFromDictionary:additionalParams];
+    }
+    NSLog(@"taskinfo: %@",taskInfo);
+    [self sendrequest:@"/push/tasks" :@"POST" :taskInfo :YES];
+}
+
 @end
