@@ -56,6 +56,7 @@
 -(void) smtpVerifyDomain:(NSString*) email;
 -(void) smtpSendMail:(NSMutableDictionary*) emaildata;
 -(void) pushListCampaigns:(int) limit :(int) offset;
+-(void) pushCampaignInfo:(NSString*) taskID;
 -(void) pushCountWebsites;
 -(void) pushListWebsites:(int) limit :(int) offset;
 -(void) pushListWebsiteVariables:(NSString*) siteId;

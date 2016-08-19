@@ -698,7 +698,18 @@ static int responsecode = 0;
     [data setObject:[NSString stringWithFormat:@"%d",offset] forKey:@"offset"];
     [self sendrequest:@"push/tasks" :@"GET" :data :YES];
 }
-
+/**
+ * Get push campaigns info
+ *
+ * @param NSString taskID
+ */
+-(void) pushCampaignInfo:(NSString*) taskID{
+    if([taskID length]==0){
+        [self handleError:@"Empty id"];
+        return;
+    }
+    [self sendrequest:[NSString stringWithFormat:@"push/tasks/%@",taskID] :@"GET" :nil :YES];
+}
 /**
  * Get amount of websites
  */
